@@ -7,17 +7,18 @@ describe('login', function () {
 
     context('quando o usuario é muito bom', function () {
 
-        const user = {
-            name: 'jassa paulo',
-            email: 'jassa@samuraibs.com',
-            password: 'pwd1234',
-            is_provider: true
-
-        }
+       
 
         before(function () {
 
-            cy.postUser(user)
+            cy.fixture('login').then(function(login){
+
+            this.login = login.login
+            cy.postUser(this.login)
+
+            })
+
+            
 
         }) 
 
@@ -26,10 +27,10 @@ describe('login', function () {
         it('deve logar com sucesso', function () {
 
             loginPage.go()
-            loginPage.form(user)
+            loginPage.form(this.login)
             loginPage.submit()
 
-            DashPage.header.userLoggedIn(user.name)
+            DashPage.header.userLoggedIn(this.login.name)
 
 
         })
