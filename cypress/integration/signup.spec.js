@@ -40,7 +40,7 @@ describe('cadastro', function () {
         })
     })
 
-    context.only('Quando o email já existe', function () {
+    context('Quando o email já existe', function () {
 
         before(function () {
 

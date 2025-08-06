@@ -1,4 +1,3 @@
-import loginpage from '../support/pages/login'
 
 import dashPage from '../support/pages/dash'
 
@@ -17,7 +16,7 @@ describe('dashboard', function () {
 
 
             cy.apiLogin(customer)
-           
+
 
             cy.setProviderId(provider.email)
 
@@ -27,9 +26,7 @@ describe('dashboard', function () {
 
         it('o mesmo deve ser exibido no dashboard', function () {
 
-            loginpage.go()
-            loginpage.form(provider)
-            loginpage.submit()
+            cy.uiLogin(provider)
 
             dashPage.calendarShouldBeVisible()
 

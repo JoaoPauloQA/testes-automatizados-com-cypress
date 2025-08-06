@@ -18,7 +18,7 @@ class DashPage {
 
     } 
     selectDay(day){ 
-        const target =  new RegExp('^' + day + '$' , 'g')
+        const target =  new RegExp('^' + day + '$' )
         cy.contains(el.BoxDay , target)
         .click()
     } 

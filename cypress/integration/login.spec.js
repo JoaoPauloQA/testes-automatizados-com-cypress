@@ -19,7 +19,9 @@ describe('login', function () {
 
             cy.postUser(user)
 
-        })
+        }) 
+
+        
 
         it('deve logar com sucesso', function () {
 
