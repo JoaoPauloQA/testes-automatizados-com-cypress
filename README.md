@@ -15,9 +15,9 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 ### ▶️ Como executar o projeto 
 
- 1.Instale as dependências: npm install 
+  ## 1.Instale as dependências: npm install 
 
- 2. Execute os testes com interface gráfica: npx cypress open
+ ##  2. Execute os testes com interface gráfica: npx cypress open
 
 
 ## ✅ Tipos de testes implementados
