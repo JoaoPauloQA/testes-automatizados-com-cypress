@@ -2,7 +2,7 @@
 
 Este repositório contém testes automatizados desenvolvidos com [Cypress](https://www.cypress.io/) para aplicações web.
 
-O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-end (E2E), utilizando boas práticas como: 
+O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-end (E2E), utilizando boas práticas. 
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
 
@@ -11,38 +11,50 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 - Faker (ou Factory personalizada) – Geração de dados dinâmicos
 - Cypress Fixture – Uso de arquivos JSON para simular dados
 - Commands customizados (`commands.js`) – Reutilização de ações comuns
-- Page Objects – Organização de ações por página
+- Page Objects – Organização de ações por página  
 
-### Testes de Login
+### ▶️ Como executar o projeto 
+
+ 1.Instale as dependências: npm install 
+
+ 2. Execute os testes com interface gráfica: npx cypress open
+
+
+## ✅ Tipos de testes implementados
+
+### 🔐 Testes de Login
 - Com dados válidos e inválidos
 
 -Simulação de login via UI
 
 -Simulação de login via token 
 
-### Testes de recuperação de senha 
+###  🔁 Testes de recuperação de senha 
 
 -Simulação de fluxo de "Esqueci minha senha"
 
 -Validação de e-mails cadastrados e não cadastrados 
 
-### Testes de registro
+### 📝 Testes de registro
 
 -Criação de nova conta com dados dinâmicos (factories ou faker)
 
 -Validações de campos obrigatórios e senhas 
 
-### Testes de agendamento
+### 📅 Testes de agendamento
 -Seleção de prestador de serviço
 
 -Escolha de data e horário
 
 -Confirmação e verificação de agendamento no dashboard
 
-- **Testes de API**
+  ### 🌐Testes de API
   - Criação de usuário (`POST`)
   - Consulta de dados (`GET`)
-  - Validação de respostas com `cy.request()`
+  - Validação de respostas com `cy.request()` 
+
+### 📝 Licença
+Este projeto está sob a licença MIT.
 
 ## 📁 Estrutura do projeto
 
