@@ -13,22 +13,26 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 - Commands customizados (`commands.js`) – Reutilização de ações comuns
 - Page Objects – Organização de ações por página
 
-**Testes de Login**
+### Testes de Login
 - Com dados válidos e inválidos
 
-**Testes de recuperação de senha** 
+-Simulação de login via UI
+
+-Simulação de login via token 
+
+###Testes de recuperação de senha** 
 
 -Simulação de fluxo de "Esqueci minha senha"
 
 -Validação de e-mails cadastrados e não cadastrados 
 
-**Testes de registro**  
+### Testes de registro
 
 -Criação de nova conta com dados dinâmicos (factories ou faker)
 
 -Validações de campos obrigatórios e senhas 
 
-**Testes de agendamento**  
+### Testes de agendamento
 -Seleção de prestador de serviço
 
 -Escolha de data e horário
