@@ -18,11 +18,14 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 - **Command Pattern:** Ações comuns encapsuladas em comandos customizados do Cypress (`cy.login`, `cy.postUser`, etc).
 
 
-## ▶️ Como executar o projeto 
+## ⚙️ Configuração do Backend (Node + TypeORM)
 
-  ### 1.Instale as dependências: npm install 
+Este projeto depende de uma API construída com Node.js e usa **TypeORM** para gerenciar a conexão com o banco de dados e rodar as migrations.
 
- ###  2. Execute os testes com interface gráfica: npx cypress open
+### 📦 Instalação das dependências
+
+```bash
+npm install
 
 
 ## ✅ Tipos de testes implementados
