@@ -10,8 +10,13 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 - [Underscore.js](https://underscorejs.org/) – Suporte a manipulação de dados em testes
 - Faker (ou Factory personalizada) – Geração de dados dinâmicos
 - Cypress Fixture – Uso de arquivos JSON para simular dados
-- Commands customizados (`commands.js`) – Reutilização de ações comuns
-- Page Objects – Organização de ações por página  
+
+## 🧱 Padrões de projeto utilizados
+
+- **Page Object Model (POM):** Separação das interações de página em arquivos próprios, para facilitar reutilização e manutenção dos testes.
+- **Factory Pattern:** Criação de usuários e dados dinâmicos de forma centralizada.
+- **Command Pattern:** Ações comuns encapsuladas em comandos customizados do Cypress (`cy.login`, `cy.postUser`, etc).
+
 
 ## ▶️ Como executar o projeto 
 
