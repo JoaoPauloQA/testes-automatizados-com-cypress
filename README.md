@@ -22,10 +22,9 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 Este projeto depende de uma API construída com Node.js e usa **TypeORM** para gerenciar a conexão com o banco de dados e rodar as migrations.
 
-### 📦 Instalação das dependências
+## 📦 Instalação das dependências
 
-```bash
-npm install
+-npm install
 
 
 ## ✅ Tipos de testes implementados
