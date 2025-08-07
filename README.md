@@ -13,11 +13,11 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 - Commands customizados (`commands.js`) – Reutilização de ações comuns
 - Page Objects – Organização de ações por página  
 
-### ▶️ Como executar o projeto 
+## ▶️ Como executar o projeto 
 
-  ## 1.Instale as dependências: npm install 
+  ### 1.Instale as dependências: npm install 
 
- ##  2. Execute os testes com interface gráfica: npx cypress open
+ ###  2. Execute os testes com interface gráfica: npx cypress open
 
 
 ## ✅ Tipos de testes implementados
@@ -67,3 +67,12 @@ cypress/
 ├── support/
 │   ├── commands.js   # Comandos customizados
 │   └── index.js      # Configurações globais
+
+
+
+👨‍💻 Autor
+João Paulo – QA Automation Enthusiast
+🔗 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-paulo-6a1b3a207/)
+📧 jopaulomartinsdacostaa@gmail.com
+
+
