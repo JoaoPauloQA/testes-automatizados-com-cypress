@@ -20,7 +20,7 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 -Simulação de login via token 
 
-###Testes de recuperação de senha** 
+### Testes de recuperação de senha 
 
 -Simulação de fluxo de "Esqueci minha senha"
 
