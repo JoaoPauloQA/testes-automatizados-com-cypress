@@ -22,9 +22,37 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 Este projeto depende de uma API construída com Node.js e usa **TypeORM** para gerenciar a conexão com o banco de dados e rodar as migrations.
 
-## 📦 Instalação das dependências
+## Como rodar os testes
 
--npm install
+- [Node.js](https://nodejs.org/) instalado (recomendo versão 16 ou superior)  
+- [Yarn](https://yarnpkg.com/getting-started/install) instalado (alternativa ao npm, facilita o gerenciamento de dependências)  
+- Acesso ao banco de dados PostgreSQL hospedado no Railway (credenciais necessárias)
+### Passo a passo
+
+1. **Clone este repositório**  
+```bash
+git clone github.com/JoaoPauloQA/testes-automatizados-com-cypress
+cd seuprojeto  
+
+2. Instale as dependências do projeto
+
+yarn install 
+
+3. Configure a conexão com o banco de dados PostgreSQL
+No arquivo .env (crie na raiz do projeto se não existir), configure a variável DATABASE_URL com a URL de conexão do seu banco PostgreSQL no Railway, algo como:
+DATABASE_URL=postgres://usuario:senha@endereco:porta/nome_do_banco
+
+4. Execute as migrations do banco com TypeORM 
+
+5. Inicie o backend (API Node.js)
+
+yarn dev 
+
+6. Execute os testes com Cypress
+Para abrir a interface visual: 
+npx cypress open
+
+
 
 
 ## ✅ Tipos de testes implementados
