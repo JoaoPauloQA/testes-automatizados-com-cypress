@@ -29,7 +29,7 @@ Este projeto depende de uma API construída com Node.js e usa **TypeORM** para g
 - Acesso ao banco de dados PostgreSQL hospedado no Railway (credenciais necessárias)
 ### Passo a passo
 ```bash
-1. **Clone este repositório**  
+1. Clone este repositório 
 
 git clone github.com/JoaoPauloQA/testes-automatizados-com-cypress
 cd seuprojeto  
