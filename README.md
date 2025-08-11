@@ -93,7 +93,7 @@ Este projeto está sob a licença MIT.
 
 ## 📁 Estrutura do projeto
 
-
+```bash
 cypress/
 ├── fixtures/         # Dados simulados (ex: login.json)
 ├── integration/      # Testes (specs)
@@ -103,7 +103,7 @@ cypress/
 │   ├── commands.js   # Comandos customizados
 │   └── index.js      # Configurações globais
 
-
+```bash
 
 👨‍💻 Autor
 João Paulo – QA Automation Enthusiast
