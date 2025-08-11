@@ -103,10 +103,10 @@ cypress/
 │   ├── commands.js   # Comandos customizados
 │   └── index.js      # Configurações globais
 
-```bash
+```
 
 👨‍💻 Autor
-João Paulo – QA Automation Enthusiast
+João Paulo – QA Automation Engineer | Test Automation Enthusiast
 🔗 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-paulo-6a1b3a207/)
 📧 jopaulomartinsdacostaa@gmail.com
 
