@@ -28,7 +28,7 @@ Este projeto depende de uma API construída com Node.js e usa **TypeORM** para g
 - [Yarn](https://yarnpkg.com/getting-started/install) instalado (alternativa ao npm, facilita o gerenciamento de dependências)  
 - Acesso ao banco de dados PostgreSQL hospedado no Railway (credenciais necessárias)
 ### Passo a passo
-
+```bash
 1. **Clone este repositório**  
 
 git clone github.com/JoaoPauloQA/testes-automatizados-com-cypress
@@ -52,7 +52,7 @@ yarn dev
 Para abrir a interface visual: 
 npx cypress open
 
-
+```
 
 
 ## ✅ Tipos de testes implementados
