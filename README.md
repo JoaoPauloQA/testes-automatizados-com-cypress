@@ -30,7 +30,7 @@ Este projeto depende de uma API construída com Node.js e usa **TypeORM** para g
 ### Passo a passo
 
 1. **Clone este repositório**  
-```bash
+
 git clone github.com/JoaoPauloQA/testes-automatizados-com-cypress
 cd seuprojeto  
 
@@ -93,7 +93,7 @@ Este projeto está sob a licença MIT.
 
 ## 📁 Estrutura do projeto
 
-```bash
+
 cypress/
 ├── fixtures/         # Dados simulados (ex: login.json)
 ├── integration/      # Testes (specs)
