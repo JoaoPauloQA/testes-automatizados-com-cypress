@@ -6,7 +6,7 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
 
-- [Cypress](9.5.0)(https://www.cypress.io/) – Testes E2E e de API
+- [Cypress] (9.5.0 )(https://www.cypress.io/) – Testes E2E e de API
 - [Underscore.js](https://underscorejs.org/) – Suporte a manipulação de dados em testes
 - Faker (ou Factory personalizada) – Geração de dados dinâmicos
 - Cypress Fixture – Uso de arquivos JSON para simular dados
