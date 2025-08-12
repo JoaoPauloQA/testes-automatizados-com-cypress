@@ -6,7 +6,7 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
 
-- [Cypress] (9.5.0 )(https://www.cypress.io/) – Testes E2E e de API
+- [Cypress 9.5.0 ] (https://www.cypress.io/) – Testes E2E e de API
 - [Underscore.js](https://underscorejs.org/) – Suporte a manipulação de dados em testes
 - Faker (ou Factory personalizada) – Geração de dados dinâmicos
 - Cypress Fixture – Uso de arquivos JSON para simular dados
@@ -24,14 +24,23 @@ Este projeto depende de uma API construída com Node.js e usa **TypeORM** para g
 
 ## Como rodar os testes
 
-- [Node.js] (16.14.0)(https://nodejs.org/) instalado (recomendo versão 16)  
+- [Node.js 16.14.0] (https://nodejs.org/) instalado (recomendo versão 16)  
 - [Yarn](https://yarnpkg.com/getting-started/install) instalado (alternativa ao npm, facilita o gerenciamento de dependências)  
 - Acesso ao banco de dados PostgreSQL hospedado no Railway (credenciais necessárias)
+
+## Requisitos
+
+- Node.js >= 16.14.0 ([site oficial](https://nodejs.org/))  
+- Yarn  
+- PostgreSQL (hosted on Railway)  
+- Cypress 9.5.0 ([site oficial](https://www.cypress.io/))  
+
+
 ### Passo a passo
 ```bash
 1. Clone este repositório 
 
-git clone github.com/JoaoPauloQA/testes-automatizados-com-cypress
+git clone https://github.com/JoaoPauloQA/testes-automatizados-com-cypress
 cd seuprojeto  
 
 2. Instale as dependências do projeto
@@ -42,7 +51,7 @@ yarn install
 No arquivo .env (crie na raiz do projeto se não existir), configure a variável DATABASE_URL com a URL de conexão do seu banco PostgreSQL no Railway, algo como:
 DATABASE_URL=postgres://usuario:senha@endereco:porta/nome_do_banco
 
-4. Execute as migrations do banco com TypeORM 
+4. Execute as migrations para preparar o banco de dados :
 
 yarn typeorm migration:run
 
