@@ -6,7 +6,7 @@ O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
 
-- [Cypress](https://www.cypress.io/) – Testes E2E e de API
+- [Cypress](9.5.0)(https://www.cypress.io/) – Testes E2E e de API
 - [Underscore.js](https://underscorejs.org/) – Suporte a manipulação de dados em testes
 - Faker (ou Factory personalizada) – Geração de dados dinâmicos
 - Cypress Fixture – Uso de arquivos JSON para simular dados
@@ -24,7 +24,7 @@ Este projeto depende de uma API construída com Node.js e usa **TypeORM** para g
 
 ## Como rodar os testes
 
-- [Node.js](https://nodejs.org/) instalado (recomendo versão 16 ou superior)  
+- [Node.js] (16.14.0)(https://nodejs.org/) instalado (recomendo versão 16)  
 - [Yarn](https://yarnpkg.com/getting-started/install) instalado (alternativa ao npm, facilita o gerenciamento de dependências)  
 - Acesso ao banco de dados PostgreSQL hospedado no Railway (credenciais necessárias)
 ### Passo a passo
@@ -43,6 +43,8 @@ No arquivo .env (crie na raiz do projeto se não existir), configure a variável
 DATABASE_URL=postgres://usuario:senha@endereco:porta/nome_do_banco
 
 4. Execute as migrations do banco com TypeORM 
+
+yarn typeorm migration:run
 
 5. Inicie o backend (API Node.js)
 
