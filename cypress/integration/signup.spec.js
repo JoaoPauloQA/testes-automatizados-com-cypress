@@ -23,7 +23,7 @@ describe('cadastro', function () {
         before(function () {
             cy.task('removeUser', this.success.email)
                 .then(function (result) {
-                    console.log(result)
+                    
                 })
 
         })

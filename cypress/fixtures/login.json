@@ -1,9 +1,9 @@
-{"login": {
-            "name": "jassa paulo",
-            "email": "jassa@samuraibs.com",
-            "password": "pwd1234",
-            "is_provider": true
-
-        }
-
+{
+    "login": {
+        "name": "jassa paulo",
+        "email": "jassa@samuraibs.com",
+        "password": "pwd1234",
+        "is_provider": true
     }
+   
+}
