@@ -4,6 +4,15 @@
         "email": "jassa@samuraibs.com",
         "password": "pwd1234",
         "is_provider": true
-    }
-   
+    },
+    "invalid_emails": [
+        "papipto.com.br",
+        "joao123",
+        "@",
+        "xpto56",
+        "111",
+        "~~dasd",
+        "74637",
+        "@gmail.com"
+    ]
 }
