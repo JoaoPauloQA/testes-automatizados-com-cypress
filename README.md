@@ -1,8 +1,6 @@
 # 🧪 Testes Automatizados com Cypress
 
-Este repositório contém testes automatizados desenvolvidos com [Cypress](https://www.cypress.io/) para aplicações web.
-
-O objetivo deste projeto é praticar e demonstrar conhecimento em testes end-to-end (E2E), utilizando boas práticas. 
+Este repositório contém testes end-to-end (E2E) e de API para aplicações web, desenvolvidos com Cypress, com foco em boas práticas de automação.
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
 
@@ -33,7 +31,8 @@ Este projeto depende de uma API construída com Node.js e usa **TypeORM** para g
 - Node.js >= 16.14.0 ([site oficial](https://nodejs.org/))  
 - Yarn  
 - PostgreSQL (hosted on Railway)  
-- Cypress 9.5.0 ([site oficial](https://www.cypress.io/))  
+- Cypress 9.5.0 ([site oficial](https://www.cypress.io/))
+- TypeORM para migrations
 
 
 ### Passo a passo
