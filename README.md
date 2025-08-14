@@ -26,24 +26,17 @@ As migrations configuram as tabelas e relacionamentos necessários para os teste
 
 ![teste rodando no cypress](assets/cypress.png)
 
-## Como rodar os testes
+## 🔧 Instalação e Execução
 
-- [Node.js 16.14.0] (https://nodejs.org/) instalado (recomendo versão 16)  
-- [Yarn](https://yarnpkg.com/getting-started/install) instalado (alternativa ao npm, facilita o gerenciamento de dependências)  
-- Acesso ao banco de dados PostgreSQL hospedado no Railway (credenciais necessárias)
-
-## Requisitos
+### Pré-requisitos
 
 - Node.js >= 16.14.0 ([site oficial](https://nodejs.org/))  
 - Yarn  
 - PostgreSQL (hosted on Railway)  
-- Cypress 9.5.0 ([site oficial](https://www.cypress.io/))
-- TypeORM para migrations
 
-
-### Passo a passo
+## Passo a passo
 ```bash
-1. Clone este repositório 
+ 1. Clone este repositório 
 
 git clone https://github.com/JoaoPauloQA/testes-automatizados-com-cypress
 cd seuprojeto  
@@ -71,38 +64,20 @@ npx cypress open
 ```
 
 
-## ✅ Tipos de testes implementados
+## ✅  testes implementados
 
-### 🔐 Testes de Login
-- Com dados válidos e inválidos
+UI
 
--Simulação de login via UI
+**Login** (válido, inválido e via token)
+**Recuperação de senha** (fluxo completo)
+**Registro de usuário** (dados dinâmicos, validações)
+**Agendamento** (seleção de prestador, data, horário e confirmação)
 
--Simulação de login via token 
+API
 
-###  🔁 Testes de recuperação de senha 
-
--Simulação de fluxo de "Esqueci minha senha"
-
--Validação de e-mails cadastrados e não cadastrados 
-
-### 📝 Testes de registro
-
--Criação de nova conta com dados dinâmicos (factories ou faker)
-
--Validações de campos obrigatórios e senhas 
-
-### 📅 Testes de agendamento
--Seleção de prestador de serviço
-
--Escolha de data e horário
-
--Confirmação e verificação de agendamento no dashboard
-
-  ### 🌐Testes de API
-  - Criação de usuário (`POST`)
-  - Consulta de dados (`GET`)
-  - Validação de respostas com `cy.request()` 
+-Criar usuário (POST)
+-Consultar dados (GET)
+-Validação de respostas com cy.request()
 
 ### 📝 Licença
 Este projeto está sob a licença MIT.
