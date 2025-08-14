@@ -5,16 +5,23 @@ import DashPage from '../support/pages/dash'
 describe('login', function () {
 
 
+    before(function () {
+
+        cy.fixture('login').then(function (login) {
+
+            this.login = login.login
+            this.invalid_emails = login.invalid_emails
+
+
+        })
+
+    })
+
     context('quando o usuario é muito bom', function () {
 
         before(function () {
 
-            cy.fixture('login').then(function (login) {
-
-                this.login = login.login
-                cy.postUser(this.login)
-
-            })
+            cy.postUser(this.login)
 
         })
 
@@ -39,23 +46,21 @@ describe('login', function () {
 
         before(function () {
 
-            cy.fixture('login').then(function (login) {
 
-                this.login = login.login
+            cy.postUser(this.login)
 
-                cy.postUser(this.login).then(function () {
-
-                    this.login.password = 'abc123'
-
-                })
-
-            })
         })
 
         it('deve notificar erro de credenciais', function () {
 
+            const wrongLogin = {
+
+                ...this.login,
+                password: 'abc'
+            }
+
             loginPage.go()
-            loginPage.form(this.login)
+            loginPage.form(wrongLogin)
             loginPage.submit()
 
 
@@ -71,10 +76,6 @@ describe('login', function () {
 
             before(function () {
 
-                cy.fixture('login').then(function (login) {
-
-                    this.invalid_emails = login.invalid_emails
-                })
 
                 loginPage.go()
 
@@ -83,7 +84,7 @@ describe('login', function () {
 
 
 
-            it('não deve logar com email:' , function () {
+            it('não deve logar com email:', function () {
 
                 this.invalid_emails.forEach(function (email) {
 
