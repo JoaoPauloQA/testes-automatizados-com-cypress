@@ -32,10 +32,10 @@ import dashPage from './pages/dash'
 
 
 //app actions
-Cypress.Commands.add('uiLogin', function(user){
-  
+Cypress.Commands.add('uiLogin', function (user) {
+
     LoginPage.go()
-    LoginPage.form(user) 
+    LoginPage.form(user)
     LoginPage.submit()
     dashPage.header.userLoggedIn(user.name)
 
@@ -48,7 +48,7 @@ Cypress.Commands.add('postUser', function (user) {
 
     cy.task('removeUser', user.email)
         .then(function (result) {
-            
+
         })
     cy.request({
         method: 'POST',
@@ -163,6 +163,17 @@ Cypress.Commands.add('apiLogin', function (user) {
         expect(response.status).to.eq(200)
         Cypress.env('apiToken', response.body.token)
     })
+
+})
+
+Cypress.Commands.add('sucessLogin', function (user) {
+
+    LoginPage.go()
+    LoginPage.form(user)
+    LoginPage.submit()
+    dashPage.header.userLoggedIn(user.name)
+
+
 
 })
 

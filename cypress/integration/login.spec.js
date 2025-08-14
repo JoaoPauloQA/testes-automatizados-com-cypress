@@ -27,9 +27,8 @@ describe('login', function () {
 
         it('deve logar com sucesso', function () {
 
-            loginPage.go()
-            loginPage.form(this.login)
-            loginPage.submit()
+            
+            cy.sucessLogin()
 
             DashPage.header.userLoggedIn(this.login.name)
 
@@ -40,7 +39,7 @@ describe('login', function () {
 
 
 
-    context('quando o usuario é bom mas a senha esta incorreta', function () {
+    context.only('quando o usuario é bom mas a senha esta incorreta', function () {
 
 
 
@@ -84,7 +83,7 @@ describe('login', function () {
 
 
 
-            it('não deve logar com email:', function () {
+            it('não deve logar com email:' , function () {
 
                 this.invalid_emails.forEach(function (email) {
 
@@ -97,7 +96,7 @@ describe('login', function () {
                     loginPage.form(user)
                     loginPage.submit()
                     loginPage.alert.HaveText('Informe um email válido')
-
+                  
                 })
 
 

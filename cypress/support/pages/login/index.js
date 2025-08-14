@@ -18,7 +18,7 @@ class loginPage  {
             
     cy.get(el.email).clear().type(user.email)
     cy.get(el.password).clear().type(user.password)
-      
+    cy.log(user.email)
 
    }
    submit(){
