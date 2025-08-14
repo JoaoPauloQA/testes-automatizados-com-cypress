@@ -4,10 +4,10 @@ Este repositório contém testes end-to-end (E2E) e de API para aplicações web
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
 -Cypress 9.5.0 – Testes E2E e de API
--**Underscore.js** – Manipulação de dados em testes
--**Faker.js / Factory personalizada** – Geração de dados dinâmicos
--**Fixtures do Cypress** – Simulação de dados via JSON
--**TypeORM** – Mapeamento e migrations do banco de dados
+- **Underscore.js** – Manipulação de dados em testes
+- **Faker.js / Factory personalizada** – Geração de dados dinâmicos
+- **Fixtures do Cypress** – Simulação de dados via JSON
+- **TypeORM** – Mapeamento e migrations do banco de dados
 
 PostgreSQL – Banco de dados (Railway)
 ## 🧱 Padrões de projeto utilizados
