@@ -24,7 +24,7 @@ As migrations configuram as tabelas e relacionamentos necessários para os teste
 
 ## 📸 Demonstração 
 
-[teste rodando no cypress](assets/cypress.png)
+![teste rodando no cypress](assets/cypress.png)
 
 ## Como rodar os testes
 
