@@ -3,7 +3,7 @@
 Este repositório contém testes end-to-end (E2E) e de API para aplicações web, desenvolvidos com Cypress, com foco em boas práticas de automação.
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
--Cypress 9.5.0 – Testes E2E e de API
+- Cypress 9.5.0 – Testes E2E e de API
 - **Underscore.js** – Manipulação de dados em testes
 - **Faker.js / Factory personalizada** – Geração de dados dinâmicos
 - **Fixtures do Cypress** – Simulação de dados via JSON
