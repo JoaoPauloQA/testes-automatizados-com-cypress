@@ -73,9 +73,9 @@ npx cypress open
 - **Agendamento** (seleção de prestador, data, horário e confirmação)
 
 ### API
--Criar usuário (POST)
--Consultar dados (GET)
--Validação de respostas com cy.request()
+- Criar usuário (POST)
+- Consultar dados (GET)
+- Validação de respostas com cy.request()
 
 ### 📝 Licença
 Este projeto está sob a licença MIT.
