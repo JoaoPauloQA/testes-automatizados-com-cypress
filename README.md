@@ -3,12 +3,13 @@
 Este repositório contém testes end-to-end (E2E) e de API para aplicações web, desenvolvidos com Cypress, com foco em boas práticas de automação.
 
 ## 🚀 Tecnologias e bibliotecas utilizadas
+-Cypress 9.5.0 – Testes E2E e de API
+-**Underscore.js** – Manipulação de dados em testes
+-**Faker.js / Factory personalizada** – Geração de dados dinâmicos
+-**Fixtures do Cypress** – Simulação de dados via JSON
+-**TypeORM** – Mapeamento e migrations do banco de dados
 
-- [Cypress 9.5.0 ] (https://www.cypress.io/) – Testes E2E e de API
-- [Underscore.js](https://underscorejs.org/) – Suporte a manipulação de dados em testes
-- Faker (ou Factory personalizada) – Geração de dados dinâmicos
-- Cypress Fixture – Uso de arquivos JSON para simular dados
-
+PostgreSQL – Banco de dados (Railway)
 ## 🧱 Padrões de projeto utilizados
 
 - **Page Object Model (POM):** Separação das interações de página em arquivos próprios, para facilitar reutilização e manutenção dos testes.
@@ -16,9 +17,14 @@ Este repositório contém testes end-to-end (E2E) e de API para aplicações web
 - **Command Pattern:** Ações comuns encapsuladas em comandos customizados do Cypress (`cy.login`, `cy.postUser`, etc).
 
 
-## ⚙️ Configuração do Backend (Node + TypeORM)
+## ⚙️ Backend
 
-Este projeto depende de uma API construída com Node.js e usa **TypeORM** para gerenciar a conexão com o banco de dados e rodar as migrations.
+Este projeto depende de uma API Node.js com TypeORM conectada ao PostgreSQL.
+As migrations configuram as tabelas e relacionamentos necessários para os testes. 
+
+## 📸 Demonstração 
+
+[teste rodando no cypress](assets/cypress.png)
 
 ## Como rodar os testes
 
