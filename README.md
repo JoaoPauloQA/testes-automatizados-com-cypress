@@ -66,14 +66,14 @@ npx cypress open
 
 ## ✅  testes implementados
 
-UI
+### UI
 
-**Login** (válido, inválido e via token)
-**Recuperação de senha** (fluxo completo)
-**Registro de usuário** (dados dinâmicos, validações)
-**Agendamento** (seleção de prestador, data, horário e confirmação)
+- **Login** (válido, inválido e via token)
+- **Recuperação de senha** (fluxo completo)
+- **Registro de usuário** (dados dinâmicos, validações)
+- **Agendamento** (seleção de prestador, data, horário e confirmação)
 
-API
+### API
 
 -Criar usuário (POST)
 -Consultar dados (GET)
