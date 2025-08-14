@@ -24,6 +24,13 @@ As migrations configuram as tabelas e relacionamentos necessários para os teste
 
 ## 📸 Demonstração 
 
+- A imagem abaixo mostra a execução automatizada dos testes de **cadastro de usuário** utilizando Cypress.
+Estes testes cobrem cenários positivos e negativos, incluindo:
+- Cadastro com dados válidos
+- E-mail já existente no sistema
+- E-mail em formato inválido
+- Senha com menos de 6 caracteres
+- Formulário enviado em branco (validações obrigatórias)
 ![teste rodando no cypress](assets/cypress.png)
 
 ## 🔧 Instalação e Execução
