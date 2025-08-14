@@ -23,8 +23,7 @@ Este projeto depende de uma API Node.js com TypeORM conectada ao PostgreSQL.
 As migrations configuram as tabelas e relacionamentos necessários para os testes. 
 
 ## 📸 Demonstração 
-
-- # A imagem abaixo mostra a execução automatizada dos testes de **cadastro de usuário** utilizando Cypress.
+ A imagem abaixo mostra a execução automatizada dos testes de **cadastro de usuário** utilizando Cypress.
 Estes testes cobrem cenários positivos e negativos, incluindo:
 - Cadastro com dados válidos
 - E-mail já existente no sistema
