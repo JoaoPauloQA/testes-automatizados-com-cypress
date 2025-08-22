@@ -1,37 +1,22 @@
 import loginPage from '../support/pages/login'
 import DashPage from '../support/pages/dash'
+import { user, invalid_emails, wrongLogin, message, alertmessages } from '../support/factories/login/index'
 
 
 describe('login', function () {
 
 
-    before(function () {
-
-        cy.fixture('login').then(function (login) {
-
-            this.login = login.login
-            this.invalid_emails = login.invalid_emails
-
-
-        })
-
-    })
-
     context('quando o usuario é muito bom', function () {
 
         before(function () {
 
-            cy.postUser(this.login)
+            cy.postUser(user)
 
         })
 
         it('deve logar com sucesso', function () {
 
-            
-            cy.sucessLogin()
-
-            DashPage.header.userLoggedIn(this.login.name)
-
+            cy.uiLogin(user)
 
         })
 
@@ -39,31 +24,20 @@ describe('login', function () {
 
 
 
-    context.only('quando o usuario é bom mas a senha esta incorreta', function () {
+    context('quando o usuario é bom mas a senha esta incorreta', function () {
 
 
 
         before(function () {
 
-
-            cy.postUser(this.login)
+            cy.postUser(user)
 
         })
 
         it('deve notificar erro de credenciais', function () {
 
-            const wrongLogin = {
+            cy.sucessLogin(wrongLogin)
 
-                ...this.login,
-                password: 'abc'
-            }
-
-            loginPage.go()
-            loginPage.form(wrongLogin)
-            loginPage.submit()
-
-
-            const message = 'Ocorreu um erro ao fazer login, verifique suas credenciais.'
             loginPage.toast.shouldHaveTest(message)
 
         })
@@ -71,8 +45,6 @@ describe('login', function () {
 
         context('quando o formato do email é invalido', function () {
 
-
-
             before(function () {
 
 
@@ -80,41 +52,28 @@ describe('login', function () {
 
             })
 
+            invalid_emails.forEach(function (email) {
+                it(`não deve logar com email:${email}`, function () {
 
 
-
-            it('não deve logar com email:' , function () {
-
-                this.invalid_emails.forEach(function (email) {
 
                     const user = {
 
                         email: email, password: 'pwd1234'
                     }
 
-
                     loginPage.form(user)
                     loginPage.submit()
                     loginPage.alert.HaveText('Informe um email válido')
-                  
+
                 })
 
 
             })
 
-
-
         })
 
-
         context('Quando não preencho nenhum dos campos', function () {
-
-            const alertMessages = [
-
-                'E-mail é obrigatório',
-                'Senha é obrigatória',
-
-            ]
 
             before(function () {
                 loginPage.go()
@@ -122,12 +81,11 @@ describe('login', function () {
 
             })
 
-            alertMessages.forEach(function (alert) {
+            alertmessages.forEach(function (alert) {
 
                 it('deve exibir ' + alert.toLowerCase(), function () {
 
                     loginPage.alert.HaveText(alert)
-
 
                 })
 

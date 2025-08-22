@@ -31,6 +31,7 @@ import LoginPage from './pages/login'
 import dashPage from './pages/dash'
 
 
+
 //app actions
 Cypress.Commands.add('uiLogin', function (user) {
 
@@ -146,7 +147,7 @@ Cypress.Commands.add('setProviderId', function (providerEmail) {
 
 })
 
-Cypress.Commands.add('apiLogin', function (user) {
+Cypress.Commands.add('apiLogin', function (user, setLocalStorage = false) {
 
     const payload = {
 
@@ -162,7 +163,10 @@ Cypress.Commands.add('apiLogin', function (user) {
     }).then(function (response) {
         expect(response.status).to.eq(200)
         Cypress.env('apiToken', response.body.token)
-    })
+
+    }) 
+     
+    
 
 })
 
@@ -171,7 +175,7 @@ Cypress.Commands.add('sucessLogin', function (user) {
     LoginPage.go()
     LoginPage.form(user)
     LoginPage.submit()
-    dashPage.header.userLoggedIn(user.name)
+    
 
 
 
