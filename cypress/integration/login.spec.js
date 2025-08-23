@@ -22,11 +22,7 @@ describe('login', function () {
 
     })
 
-
-
     context('quando o usuario é bom mas a senha esta incorreta', function () {
-
-
 
         before(function () {
 
@@ -54,8 +50,6 @@ describe('login', function () {
 
             invalid_emails.forEach(function (email) {
                 it(`não deve logar com email:${email}`, function () {
-
-
 
                     const user = {
 

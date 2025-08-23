@@ -27,8 +27,8 @@ describe('dashboard', function () {
 
             dashPage.calendarShouldBeVisible()
 
-            const day = Cypress.env('appointmentDay')
-            dashPage.selectDay(day)
+            const date = Cypress.env('appointmentDate')
+            dashPage.selectDay(date)
 
             dashPage.appointmentShouldBeVisible(customer, appointment.hour)
 
